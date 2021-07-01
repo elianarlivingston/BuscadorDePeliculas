@@ -1,0 +1,1 @@
+export type { ResponseMovie, Movie, MovieDetail, ParamsMovie, ParamsMovieDetail, ParamsMovieSearch } from './Movie'
