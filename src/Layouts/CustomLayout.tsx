@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Header, Footer } from '../components/index'
 
 interface ComponentProps {
     children: React.ReactNode
@@ -7,11 +8,11 @@ interface ComponentProps {
 const CustomLayout = (props: ComponentProps) => {
     const { children } = props
     return (
-        <>
-            <header>header</header>
+        <div className="custom-layout">
+            <Header />
             <main>{ children }</main>
-            <footer>footer</footer>
-        </>
+            <Footer />
+        </div>
     )
 }
 
